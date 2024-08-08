@@ -1,0 +1,2 @@
+jax == 0.4.31
+matplotlib == 3.9.1.post1
