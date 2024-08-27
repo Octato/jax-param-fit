@@ -53,7 +53,6 @@ def train() -> Array:
     while k < search_steps:
         new_params = random.normal(keys[k], [6])
         l = loss(new_params)
-        l_grad = grad(loss)
         if (params is None or l.item() < losses[-1]):
             params = new_params
             losses.append(l.item())
